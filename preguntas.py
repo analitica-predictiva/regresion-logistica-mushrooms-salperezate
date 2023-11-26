@@ -71,15 +71,12 @@ def pregunta_01():
     df.pop("veil_type")
 
     # Asigne la columna `type` a la variable `y`.
-    #____ = ____
     y = df["type"]
 
     # Asigne una copia del dataframe `df` a la variable `X`.
-    #____ = ____.____(____)
     X = df.copy()
 
     # Remueva la columna `type` del DataFrame `X`.
-    #____.____(____)
     X.pop("type")
 
     # Retorne `X` y `y`
@@ -101,16 +98,10 @@ def pregunta_02():
 
     # Divida los datos de entrenamiento y prueba. La semilla del generador de números
     # aleatorios es 123. Use 50 patrones para la muestra de prueba.
-    # (X_train, X_test, y_train, y_test,) = ____(
-    #     ____,
-    #     ____,
-    #     test_size=____,
-    #     random_state=____,
-    # )
     (X_train, X_test, y_train, y_test,) = train_test_split(
         X,
         y,
-        test_size=0.062,
+        test_size=50,
         random_state=123,
     )
 
